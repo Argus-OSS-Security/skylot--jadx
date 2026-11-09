@@ -1,13 +1,14 @@
 name: Release
 
-on:
-  push:
-    tags:
-      - "v*.*.*"
-
-    branches: [ "release-test/v*.*.*" ]
-
-# additional permissions for provided GitHub token to create new release
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     tags:
+#       - "v*.*.*"
+# 
+#     branches: [ "release-test/v*.*.*" ]
+# 
+# # additional permissions for provided GitHub token to create new release
 permissions:
   contents: write
 

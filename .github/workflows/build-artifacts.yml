@@ -1,9 +1,10 @@
 name: Build Artifacts
 
-on:
-  push:
-    branches: [ master, build-test, build-artifacts ]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches: [ master, build-test, build-artifacts ]
+# 
 jobs:
   build:
     runs-on: ubuntu-latest
